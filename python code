@@ -1,0 +1,25 @@
+import random
+
+def main():
+    
+    side = int(input("Which die would you like to roll? Enter '2' for 1d2, '4' for 1d4, '6' for 1d6, and so on."))
+    die_roll = random.randint(1, side)
+    print (die_roll)
+    if die_roll == 20 and side == 20:
+        print("CRITICAL SUCCESS!!!")
+    if die_roll == 1 and side == 20:
+        print("CRITICAL FAILURE!!!")
+
+
+def reroll():
+
+    roll_again = True
+    while roll_again:
+        r = input("Roll another die? (y/n)")
+        if r == "y" or r =="yes":
+            main()
+        else:
+            roll_again = False
+            
+main()
+reroll()
