@@ -1,5 +1,7 @@
+# import the random library
 import random
 
+# creating the main function, the die roller
 def main():
     
     side = int(input("Which die would you like to roll? Enter '2' for 1d2, '4' for 1d4, '6' for 1d6, and so on."))
